@@ -1,2 +1,2 @@
 # OIBSIP
-I Developed Landing page website with using #HTML & #CSS skills.
+I Developed Landing page website of my university with using #HTML & #CSS skills.
