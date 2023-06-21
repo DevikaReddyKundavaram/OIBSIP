@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>title</title>
+<style type="text/css">
+     *{padding: 0;margin: 0;box-sizing:border-box;}
+     header{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background: linear-gradient(rgb(255, 255, 255),rgb(214, 150, 200));
+        font-family: sans-serif;
+     }
+     nav{
+        width: 100%;
+        height: 100px;
+        color: rgb(3, 0, 0);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 40px;
+        margin-top: 3%;
+     }
+     .nav h1{
+        font-size: 70px;
+
+     }
+     .sections a{
+        text-decoration: none;
+        color:rgb(10, 1, 1);
+        padding:10px 20px;
+        font-size: 40px;
+        position: relative;
+    }
+    .Types a{
+        color: aquamarine;
+        font-size: xx-large;
+    } 
+    .Types th{
+        padding: 100px;
+    }
+    .Types table{
+        margin-left: 20%;
+        position: relative;
+        animation: myfirst 7s 30;
+        animation-direction: alternate;
+    }
+    @keyframes myfirst {
+        0% {left:0px;right: 70px;}
+        25%{left: 70px;right: 0px;}
+        50%{left: 0px;right: 70px;}
+        75%{left: 70px;right: 0px;}
+        100%{left: 0px;right: 70px;}
+
+        
+    }
+    img{
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 0px;
+        width: 250px;
+    }
+    .sections a::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        border-bottom: 5px solid rgb(14, 7, 7);
+        transition: 2s linear;
+
+    }
+    .sections a:hover::before{
+        width: 90%;
+    }
+    
+    .Types img:hover{
+        transform: scale(1.5);
+    }
+    .Types h1{
+        font-weight: bold;
+        color: rgb(17, 17, 4);
+        display: inline-block;
+        margin: 30px 0;
+        border-radius: 5px;
+        margin-left: 25%;
+        margin-top:15% ;
+        font-size: 100px;
+        align-items: center;
+    } 
+    .Types p{
+        color: rgba(63, 55, 55, 0.384);
+        margin-left:22% ;
+        font-size: 50px;
+
+    }
+</style>
+</head>
+<body>
+<header>
+    <nav>
+        <div>
+            <h1><u><i>LearnCoding</i></u></h1>
+        </div>
+        <div class="sections">
+            <a href="TASK2_1_HTML&CSS.html">Home</a>
+            <a href="TASK2_2.html">Languages</a>
+            <a href="Mydetails.html">My Details</a>
+
+        </div>
+    </nav>
+    <section class="Types">
+        <h1><u>CODING PLATFORMS</u></h1><br><br>
+        <p><i>Select *from below where "CodingPlatform" LIKE "%You%";</i></p><br>
+        <table align="center" >
+          <tr><th><a href="https://www.codechef.com/" target="_blank"><img src="codechef.png"></a></th>
+           <th><a href="https://www.hackerrank.com" target="_blank"><img src="HackerRank.png"></a></th>
+           <th> <a href="https://www.leetcode.com" target="_blank"><img src="LeetCode.png"></a></th></tr>
+          <tr><th><a href="https://www.codewars.com" target="_blank"><img src="codewars_logo.png"></a></th>
+          <th><a href="https://www.replit.com" target="_blank"><img src="Replitlogo.webp"></a></th>
+            <th><a href="https://www.hackerearth.com" target="_blank"><img src="HackerEarth_logo.png"></a></th></tr>
+           <th><a href="https://github.com" target="_blank"><img src="GitHub-logo.png"></a></th></tr>
+        </table>
+       
+
+    </section>
+</header>
+</body>
+</html>
